@@ -1,0 +1,10 @@
+# Personal-loan prediction configuration
+paths:
+  data: data/Loan_Modelling.csv
+  figures: reports/figures
+  metrics: reports/metrics.json
+  model: models/decision_tree_personal_loan.joblib
+
+split:
+  test_size: 0.30
+  random_state: 1

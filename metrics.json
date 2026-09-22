@@ -1,0 +1,85 @@
+{
+  "n_rows": 5000,
+  "n_cols": 13,
+  "positive_rate": 0.096,
+  "n_features": 19,
+  "split_shapes": {
+    "train": [
+      3500,
+      19
+    ],
+    "test": [
+      1500,
+      19
+    ]
+  },
+  "models": {
+    "default": {
+      "train": {
+        "Accuracy": 1.0,
+        "Recall": 1.0,
+        "Precision": 1.0,
+        "F1": 1.0
+      },
+      "test": {
+        "Accuracy": 0.9793,
+        "Recall": 0.9195,
+        "Precision": 0.8782,
+        "F1": 0.8984
+      }
+    },
+    "pre_pruned": {
+      "params": {
+        "max_depth": 2,
+        "min_samples_split": 10,
+        "class_weight": "balanced"
+      },
+      "train": {
+        "Accuracy": 0.7903,
+        "Recall": 1.0,
+        "Precision": 0.3108,
+        "F1": 0.4742
+      },
+      "test": {
+        "Accuracy": 0.7793,
+        "Recall": 1.0,
+        "Precision": 0.3104,
+        "F1": 0.4738
+      }
+    },
+    "post_pruned": {
+      "best_ccp_alpha": 0.0,
+      "train": {
+        "Accuracy": 1.0,
+        "Recall": 1.0,
+        "Precision": 1.0,
+        "F1": 1.0
+      },
+      "test": {
+        "Accuracy": 0.9793,
+        "Recall": 0.9195,
+        "Precision": 0.8782,
+        "F1": 0.8984
+      }
+    }
+  },
+  "final_model": "post_pruned",
+  "final_test_metrics": {
+    "Accuracy": 0.9793,
+    "Recall": 0.9195,
+    "Precision": 0.8782,
+    "F1": 0.8984
+  },
+  "feature_importance_top10": {
+    "Income": 0.3122,
+    "Education_2": 0.2383,
+    "Education_3": 0.1687,
+    "Family_3": 0.0981,
+    "Family_4": 0.063,
+    "CCAvg": 0.0478,
+    "Age": 0.0292,
+    "CD_Account": 0.0263,
+    "Family_2": 0.0078,
+    "Mortgage": 0.0047
+  }
+}

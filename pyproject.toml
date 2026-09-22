@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loanmodel"
+version = "1.0.0"
+description = "Personal-loan acceptance prediction with decision trees."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Yvonne" }]
+dependencies = ["numpy","pandas","scikit-learn","matplotlib","seaborn","joblib","PyYAML"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
